@@ -1,8 +1,8 @@
 # Delete all services
-kubectl delete service backend-feed backend-user frontend publicfrontend publicreverseproxy reverseproxy
+kubectl delete service backend-feed backend-user frontend publicfrontend publicreverseproxy reverseproxy reverseproxy-ep frontend-ep
 
 # Delete all deployments
-kubectl delete deployment backend-feed backend-user frontend reverseproxy
+kubectl delete deployment backend-feed backend-user frontend reverseproxy reverseproxy-ep frontend-ep
 
 # Optional: Check the status after deletion
 echo "All services and deployments have been deleted."

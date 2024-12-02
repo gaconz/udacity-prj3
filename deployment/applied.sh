@@ -23,11 +23,8 @@ kubectl get deployments
 kubectl get services 
 kubectl get pods # It should show the STATUS as Running
 
-kubectl logs -l app=frontend
-kubectl logs -l app=reverseproxy
-
 ## Run these commands from the /udagram-frontend directory
-# docker build . -t letienlocvn/udagram-frontend:v6
-# docker push letienlocvn/udagram-frontend:v6
-# kubectl set image deployment frontend frontend=letienlocvn/udagram-frontend:v6
+# docker build . -t letienlocvn/udagram-frontend:latest
+# docker push letienlocvn/udagram-frontend:latest
+# kubectl set image deployment frontend frontend=letienlocvn/udagram-frontend:latest
 
